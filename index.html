@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>ImmoExpert</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="" name="keywords" />
+        <meta content="" name="description" />
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Teko:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div
+            id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+        >
+            <div
+                class="spinner-border position-relative text-primary"
+                style="width: 6rem; height: 6rem"
+                role="status"
+            ></div>
+            <img
+                class="position-absolute top-50 start-50 translate-middle"
+                src="img/icons/icon-1.png"
+                alt="Icon"
+            />
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar Start -->
+        <nav
+            class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <h1 class="text-primary m-0">ImmoExpert</h1>
+            </a>
+            <button
+                type="button"
+                class="navbar-toggler me-4"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active"
+                        >Startseite</a
+                    >
+                    <a href="about.html" class="nav-item nav-link">Über Mich</a>
+                    <a href="service.html" class="nav-item nav-link">Dienste</a>
+                    <div class="nav-item dropdown">
+                        <a
+                            href="#"
+                            class="nav-link dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            >Seiten</a
+                        >
+                        <div class="dropdown-menu border-0 m-0">
+                            <a href="estate.html" class="dropdown-item"
+                                >Immobilien</a
+                            >
+                            <a href="advice.html" class="dropdown-item">
+                                Nützliche Vorschläge</a
+                            >
+                            <a href="testimonial.html" class="dropdown-item">
+                                Kundenfeedback</a
+                            >
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Kontakt</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="owl-carousel header-carousel position-relative">
+                <div
+                    class="owl-carousel-item position-relative"
+                    data-dot="<img src='img/carousel-1.jpg'>"
+                >
+                    <img class="img-fluid" src="img/carousel-1.jpg" alt="" />
+                    <div class="owl-carousel-inner">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1
+                                        class="display-1 text-white animated slideInDown"
+                                    >
+                                        Effiziente Mietverwaltung für Ihre
+                                        Objekte
+                                    </h1>
+                                    <p
+                                        class="fs-5 fw-medium text-white mb-4 pb-3"
+                                    >
+                                        Vertrauen Sie auf unsere Expertise in
+                                        der Mietverwaltung, um sicherzustellen,
+                                        dass Ihre Immobilien optimal genutzt
+                                        werden. Wir kümmern uns um alle Aspekte,
+                                        von der Mietersuche bis zur
+                                        Mieterbetreuung, um eine kontinuierliche
+                                        Einnahmequelle für Sie zu gewährleisten.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="owl-carousel-item position-relative"
+                    data-dot="<img src='img/carousel-2.jpg'>"
+                >
+                    <img class="img-fluid" src="img/carousel-2.jpg" alt="" />
+                    <div class="owl-carousel-inner">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1
+                                        class="display-1 text-white animated slideInDown"
+                                    >
+                                        Strategisches Facility Management
+                                    </h1>
+                                    <p
+                                        class="fs-5 fw-medium text-white mb-4 pb-3"
+                                    >
+                                        Unser strategisches Facility Management
+                                        stellt sicher, dass Ihre Immobilien in
+                                        einwandfreiem Zustand bleiben. Wir
+                                        planen und überwachen alle notwendigen
+                                        Wartungsarbeiten und Modernisierungen,
+                                        um den langfristigen Wert Ihrer
+                                        Investitionen zu sichern.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="owl-carousel-item position-relative"
+                    data-dot="<img src='img/carousel-3.jpg'>"
+                >
+                    <img class="img-fluid" src="img/carousel-3.jpg" alt="" />
+                    <div class="owl-carousel-inner">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1
+                                        class="display-1 text-white animated slideInDown"
+                                    >
+                                        Marktanalysen und Wertgutachten
+                                    </h1>
+                                    <p
+                                        class="fs-5 fw-medium text-white mb-4 pb-3"
+                                    >
+                                        Mit fundierten Marktanalysen und
+                                        präzisen Wertgutachten unterstützen wir
+                                        Sie bei wichtigen
+                                        Entscheidungsprozessen. Wir liefern
+                                        Ihnen die notwendigen Informationen, um
+                                        den optimalen Zeitpunkt für An- oder
+                                        Verkäufe zu ermitteln und Ihre
+                                        Immobilienstrategie erfolgreich
+                                        umzusetzen.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- Facts Start -->
+        <div class="container-xxl py-5">
+            <div class="container pt-5">
+                <div class="row g-4">
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="fact-item text-center bg-light h-100 p-5">
+                            <h3 class="mb-3">
+                                Umfassende Immobilienverwaltung
+                            </h3>
+                            <p class="mb-0">
+                                Ein erfahrener Immobilienmanager übernimmt die
+                                vollständige Verwaltung Ihrer Immobilien, von
+                                der Mieterauswahl bis zur Instandhaltung. Dies
+                                ermöglicht Ihnen, sich auf andere
+                                Geschäftsbereiche zu konzentrieren, während Ihre
+                                Objekte professionell betreut werden.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <div class="fact-item text-center bg-light h-100 p-5">
+                            <h3 class="mb-3">
+                                Risikomanagement und rechtliche Sicherheit
+                            </h3>
+                            <p class="mb-0">
+                                Ein Immobilienmanager bietet Ihnen den Vorteil,
+                                Risiken effektiv zu minimieren und rechtliche
+                                Anforderungen stets im Blick zu haben. Durch
+                                fundierte Kenntnisse im Mietrecht und
+                                Vertragswesen wird sichergestellt, dass Ihre
+                                Immobiliengeschäfte stets abgesichert sind.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div class="fact-item text-center bg-light h-100 p-5">
+                            <h3 class="mb-3">Maximierung der Rendite</h3>
+                            <p class="mb-0">
+                                Mit einem professionellen Immobilienmanager an
+                                Ihrer Seite können Sie Ihre Rendite maximieren.
+                                Durch gezielte Marktanalysen und strategische
+                                Investitionsentscheidungen wird der Wert Ihrer
+                                Immobilienportfolios kontinuierlich gesteigert.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Facts End -->
+
+        <!-- Feature Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="display-5 mb-4">
+                            Luxuriöses Chalet in den Schweizer Alpen –
+                            Exklusives Wohnen mit atemberaubendem Bergpanorama
+                        </h1>
+                        <p class="mb-4">
+                            Dieses außergewöhnliche Chalet, gelegen im Herzen
+                            der Schweizer Alpen, bietet eine unvergleichliche
+                            Kombination aus Luxus, Komfort und natürlicher
+                            Schönheit. Umgeben von majestätischen Bergen und
+                            unberührter Natur, ist dieses Objekt ein wahres
+                            Juwel für anspruchsvolle Käufer, die ein exklusives
+                            Zuhause in einer der begehrtesten Regionen der
+                            Schweiz suchen. Das Chalet besticht durch seine
+                            hochwertige Bauweise und die Verwendung
+                            erstklassiger Materialien, die den alpinen Charme
+                            mit modernem Design verbinden. Großzügige
+                            Panoramafenster durchfluten die Räume mit Tageslicht
+                            und bieten einen atemberaubenden Blick auf die
+                            umliegenden Gipfel. Mit einer Wohnfläche von über
+                            500 Quadratmetern bietet dieses Chalet ausreichend
+                            Platz für großzügige Wohn- und Entspannungsbereiche,
+                            darunter ein elegantes Wohnzimmer mit offenem Kamin,
+                            eine voll ausgestattete Designer-Küche sowie mehrere
+                            Schlafzimmer mit en-suite Badezimmern. Die
+                            weitläufigen Terrassen und Balkone laden dazu ein,
+                            die frische Alpenluft zu genießen und den Tag bei
+                            einem Glas Wein oder einem guten Buch ausklingen zu
+                            lassen. Für Wellness-Liebhaber bietet das Chalet
+                            einen exklusiven Spa-Bereich mit Sauna, Dampfbad und
+                            Indoor-Pool – der perfekte Ort, um nach einem Tag
+                            auf den Skipisten zu entspannen. Ein weiterer
+                            Pluspunkt dieses Objekts ist die hervorragende Lage.
+                            In unmittelbarer Nähe befinden sich einige der
+                            besten Skigebiete der Schweiz sowie charmante
+                            Dörfer, die zum Entdecken und Verweilen einladen.
+                            Zudem ist das Chalet bestens an die
+                            Verkehrsinfrastruktur angebunden, sodass Sie Zürich
+                            oder Genf in wenigen Stunden erreichen können.
+                            Dieses Chalet bietet nicht nur eine einzigartige
+                            Wohnqualität, sondern auch eine wertstabile
+                            Investitionsmöglichkeit. Die Kombination aus Luxus,
+                            Natur und Privatsphäre macht dieses Objekt zu einem
+                            begehrten Rückzugsort für Menschen, die das
+                            Besondere suchen.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <img
+                            style="width: 100%"
+                            class="img-fluid"
+                            src="img/private.jpg"
+                            alt=""
+                        />
+                    </div>
+                </div>
+                <div class="row g-5" style="flex-direction: row-reverse">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="display-5 mb-4">
+                            Elegantes Stadthaus in Zürich – Modernes Wohnen im
+                            Herzen der Stadt
+                        </h1>
+                        <p class="mb-4">
+                            Dieses exklusive Stadthaus im Zentrum von Zürich
+                            verkörpert modernen urbanen Lebensstil auf höchstem
+                            Niveau. Mit seiner erstklassigen Lage in einer der
+                            dynamischsten Städte Europas ist dieses Objekt ideal
+                            für Käufer, die die Vorzüge des städtischen Lebens
+                            mit Komfort und Eleganz verbinden möchten. Das
+                            Stadthaus erstreckt sich über mehrere Etagen und
+                            bietet eine Wohnfläche von rund 400 Quadratmetern.
+                            Es wurde mit viel Liebe zum Detail renoviert und
+                            verbindet historische Architektur mit zeitgemäßer
+                            Innenausstattung. Die Fassade des Gebäudes, die im
+                            klassischen Stil erhalten geblieben ist, bildet
+                            einen charmanten Kontrast zu den modern gestalteten
+                            Innenräumen. Im Erdgeschoss befindet sich der
+                            großzügige Wohnbereich mit hohen Decken und großen
+                            Fenstern, die für eine helle und einladende
+                            Atmosphäre sorgen. Die offene Küche ist mit
+                            modernsten Geräten ausgestattet und bietet viel
+                            Platz für kulinarische Kreationen. Angrenzend an die
+                            Küche befindet sich der Essbereich, der perfekt für
+                            gesellige Abende mit Familie und Freunden geeignet
+                            ist. Im Obergeschoss erwarten Sie mehrere
+                            Schlafzimmer, die jeweils über ein eigenes
+                            Badezimmer verfügen. Das Hauptschlafzimmer besticht
+                            durch seine großzügige Raumaufteilung und einen
+                            direkten Zugang zu einer privaten Terrasse, von der
+                            aus Sie den Blick über die Dächer von Zürich
+                            schweifen lassen können. Ein besonderes Highlight
+                            ist das luxuriöse Master-Bad mit freistehender
+                            Badewanne und bodentiefer Dusche. Das Stadthaus
+                            verfügt zudem über einen privaten Garten, der eine
+                            Oase der Ruhe inmitten der Stadt darstellt. Hier
+                            können Sie ungestört die Sonne genießen oder sich an
+                            einem kleinen Kräuter- und Blumengarten erfreuen.
+                            Dank seiner zentralen Lage sind die besten
+                            Einkaufsmöglichkeiten, Restaurants und kulturellen
+                            Einrichtungen Zürichs nur einen kurzen Spaziergang
+                            entfernt. Zudem bietet das Stadthaus eine exzellente
+                            Anbindung an den öffentlichen Nahverkehr, sodass Sie
+                            bequem alle Teile der Stadt erreichen können. Dieses
+                            Stadthaus vereint auf perfekte Weise urbanes Leben
+                            und gehobenen Wohnkomfort und ist damit eine
+                            herausragende Immobilie für alle, die in Zürich ein
+                            Zuhause auf höchstem Niveau suchen.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <img
+                            style="width: 100%"
+                            class="img-fluid"
+                            src="img/private1.jpg"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
+
+        <!-- blog Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div
+                    class="text-center mx-auto mb-5 wow fadeInUp"
+                    data-wow-delay="0.1s"
+                >
+                    <h1 class="display-5 mb-4">
+                        Exklusive Aktionen und Sonderangebote für
+                        Immobilienverwaltung
+                    </h1>
+                    <p>
+                        Nutzen Sie unsere limitierten Sonderaktionen, um noch
+                        mehr aus Ihrer Immobilienverwaltung herauszuholen. Wir
+                        bieten Ihnen attraktive Rabatte und maßgeschneiderte
+                        Angebote, die speziell auf Ihre Bedürfnisse
+                        zugeschnitten sind. Profitieren Sie von unseren
+                        exklusiven Promotions und sichern Sie sich erstklassige
+                        Dienstleistungen zu unschlagbaren Konditionen.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div
+                        class="col-lg-6 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div
+                            class="service-item d-flex position-relative text-center h-100"
+                        >
+                            <img class="bg-img" src="img/blog-1.jpg" alt="" />
+                            <div class="service-text p-5">
+                                <h3 class="mb-3">Erstberatung kostenlos</h3>
+                                <p class="mb-4">
+                                    Lernen Sie unsere Dienstleistungen kennen
+                                    und erhalten Sie eine kostenlose
+                                    Erstberatung. Lassen Sie sich unverbindlich
+                                    beraten, um die beste Strategie für Ihre
+                                    Immobilienverwaltung zu finden.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-6 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <div
+                            class="service-item d-flex position-relative text-center h-100"
+                        >
+                            <img class="bg-img" src="img/blog-2.jpg" alt="" />
+                            <div class="service-text p-5">
+                                <h3 class="mb-3">
+                                    10% Rabatt auf Mietmanagement
+                                </h3>
+                                <p class="mb-4">
+                                    Sichern Sie sich 10% Rabatt auf unsere
+                                    umfassenden Mietmanagement-Dienstleistungen.
+                                    Nutzen Sie diese Gelegenheit, um Ihre
+                                    Mieteinnahmen effizient zu maximieren und
+                                    Ihre Immobilien professionell betreuen zu
+                                    lassen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-6 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div
+                            class="service-item d-flex position-relative text-center h-100"
+                        >
+                            <img class="bg-img" src="img/blog-3.jpg" alt="" />
+                            <div class="service-text p-5">
+                                <h3 class="mb-3">
+                                    Exklusive Offerte für Neubauprojekte
+                                </h3>
+                                <p class="mb-4">
+                                    Profitieren Sie von unseren speziellen
+                                    Angeboten für Neubauprojekte. Wir bieten
+                                    Ihnen maßgeschneiderte Verwaltungslösungen,
+                                    die perfekt auf die Anforderungen neuer
+                                    Immobilien abgestimmt sind.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-6 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div
+                            class="service-item d-flex position-relative text-center h-100"
+                        >
+                            <img class="bg-img" src="img/blog-4.jpg" alt="" />
+                            <div class="service-text p-5">
+                                <h3 class="mb-3">
+                                    Spezialtarif für Langzeitverwaltung
+                                </h3>
+                                <p class="mb-4">
+                                    Sichern Sie sich unsere Spezialtarife für
+                                    die Langzeitverwaltung Ihrer Immobilien.
+                                    Ideal für Investoren, die langfristige
+                                    Lösungen suchen und den Wert ihrer
+                                    Immobilien kontinuierlich steigern möchten.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- blog End -->
+
+        <!-- Appointment Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div
+                        class="col-lg-12 wow fadeInUp text-center"
+                        data-wow-delay="0.1s"
+                    >
+                        <h4 class="section-title">
+                            Ihr Weg zur erfolgreichen Immobilienverwaltung
+                            beginnt hier
+                        </h4>
+                        <h1 class="display-5 mb-4">
+                            Vereinbaren Sie jetzt einen Termin für eine
+                            persönliche Beratung
+                        </h1>
+                        <p class="mb-4">
+                            Nutzen Sie die Gelegenheit, sich von einem
+                            erfahrenen Immobilienmanager professionell beraten
+                            zu lassen. Wir verstehen, dass die Verwaltung von
+                            Immobilien in der Schweiz komplexe Anforderungen mit
+                            sich bringt. Deshalb bieten wir Ihnen eine
+                            maßgeschneiderte Beratung, die speziell auf Ihre
+                            individuellen Bedürfnisse und Ziele abgestimmt
+                            ist.Egal, ob Sie Unterstützung bei der
+                            Mietverwaltung, der Wertsteigerung Ihrer Immobilien
+                            oder der Planung neuer Investitionen benötigen – wir
+                            stehen Ihnen mit unserer Expertise zur Seite. In
+                            einem persönlichen Gespräch können wir Ihre Fragen
+                            klären, Ihre Anliegen besprechen und gemeinsam eine
+                            Strategie entwickeln, die Ihnen Sicherheit und
+                            Erfolg in der Immobilienverwaltung garantiert.
+                        </p>
+                    </div>
+                    <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-6">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Ihr Name"
+                                    style="height: 55px"
+                                />
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    placeholder="Ihre E-Mail-Adresse"
+                                    style="height: 55px"
+                                    id="email"
+                                />
+                                <div id="result" style="color: red"></div>
+                            </div>
+                            <div class="col-12">
+                                <textarea
+                                    class="form-control"
+                                    rows="5"
+                                    placeholder="Nachricht"
+                                ></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button
+                                    class="btn btn-primary w-100 py-3"
+                                    type="submit"
+                                    id="submit"
+                                    onclick="sendForm()"
+                                >
+                                    Termin buchen
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Appointment End -->
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-light mb-4">ImmoExpert</h3>
+                        <p>
+                            Unsere Dienstleistungen im Bereich
+                            Immobilienmanagement bieten Ihnen professionelle
+                            Unterstützung bei der Verwaltung, Pflege und
+                            Optimierung Ihrer Immobilien. Wir stehen Ihnen mit
+                            unserer Erfahrung und unserem Fachwissen zur Seite,
+                            um sicherzustellen, dass Ihre Immobilienprojekte in
+                            der Schweiz erfolgreich sind.
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-light mb-4">Adresse</h3>
+                        <p class="mb-2">
+                            <i class="fa fa-phone-alt text-primary me-3"></i
+                            >+41443655151
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-envelope text-primary me-3"></i
+                            >immo_expert@gmail.com
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-envelope text-primary me-3"></i
+                            >Stampfenbachstrasse 85, 8006 Zürich, Switzerland
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-light mb-4">Schnelle Links</h3>
+                        <a class="btn btn-link" href="about.html">Über mich</a>
+                        <a class="btn btn-link" href="contact.html">Kontakt</a>
+                        <a class="btn btn-link" href="privacy-policy.html"
+                            >Datenschutzerklärung</a
+                        >
+                        <a class="btn btn-link" href="terms-of-use.html"
+                            >Nutzungsbedingungen</a
+                        >
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-light mb-4">Newsletter</h3>
+                        <p>
+                            Melden Sie sich für unseren Newsletter an und
+                            erhalten Sie regelmäßig exklusive Einblicke in den
+                            Immobilienmarkt, wertvolle Tipps zur
+                            Immobilienverwaltung und aktuelle Informationen über
+                            neue Objekte in der Schweiz.
+                        </p>
+                        <div
+                            class="position-relative mx-auto"
+                            style="max-width: 400px"
+                        >
+                            <input
+                                class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+                                type="text"
+                                placeholder="Deine E-Mail"
+                                id="info"
+                            />
+                            <button
+                                type="button"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+                                id="submit"
+                                onclick="sendRequest()"
+                            >
+                                Anmeldung
+                            </button>
+                            <div id="validation" style="color: red"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+            ><i class="bi bi-arrow-up"></i
+        ></a>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper">
+            <div class="sub-wrapper">
+                <div>
+                    <i class="bx bx-cookie"></i>
+                    <h2 style="text-align: center">Cookie-Zustimmung</h2>
+                </div>
+
+                <div class="data">
+                    <p id="cookie-text">
+                        Diese Website verwendet Cookies, um Ihnen ein besseres
+                        und besseres und relevanteres Surferlebnis auf der
+                        Website zu ermöglichen.
+                        <a href="#">Mehr erfahren...</a>
+                    </p>
+                </div>
+
+                <div class="buttons">
+                    <button class="cookie-button" id="acceptBtn">
+                        Akzeptieren
+                    </button>
+                    <button class="cookie-button" id="declineBtn">
+                        Rückgang
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/contact-form.js"></script>
+        <script src="js/cookiebanner.js"></script>
+    </body>
+</html>

@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>ImmoExpert</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="" name="keywords" />
+        <meta content="" name="description" />
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Teko:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div
+            id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+        >
+            <div
+                class="spinner-border position-relative text-primary"
+                style="width: 6rem; height: 6rem"
+                role="status"
+            ></div>
+            <img
+                class="position-absolute top-50 start-50 translate-middle"
+                src="img/icons/icon-1.png"
+                alt="Icon"
+            />
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar Start -->
+        <nav
+            class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <h1 class="text-primary m-0">ImmoExpert</h1>
+            </a>
+            <button
+                type="button"
+                class="navbar-toggler me-4"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link"
+                        >Startseite</a
+                    >
+                    <a href="about.html" class="nav-item nav-link">Über Mich</a>
+                    <a href="service.html" class="nav-item nav-link">Dienste</a>
+                    <div class="nav-item dropdown">
+                        <a
+                            href="#"
+                            class="nav-link dropdown-toggle active"
+                            data-bs-toggle="dropdown"
+                            >Seiten</a
+                        >
+                        <div class="dropdown-menu border-0 m-0">
+                            <a href="estate.html" class="dropdown-item active"
+                                >Immobilien</a
+                            >
+                            <a href="advice.html" class="dropdown-item">
+                                Nützliche Vorschläge</a
+                            >
+                            <a href="testimonial.html" class="dropdown-item">
+                                Kundenfeedback</a
+                            >
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Kontakt</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Page Header Start -->
+        <div
+            class="container-fluid page-header py-5 mb-5 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div class="container py-5">
+                <h1 class="display-1 text-white animated slideInDown">
+                    Nützliche Vorschläge
+                </h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb text-uppercase mb-0">
+                        <li class="breadcrumb-item">
+                            <a class="text-white" href="index.html"
+                                >Startseite</a
+                            >
+                        </li>
+                        <li
+                            class="breadcrumb-item text-primary active"
+                            aria-current="page"
+                        >
+                            Nützliche Vorschläge
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+        <!-- Team Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div
+                    class="text-center mx-auto mb-5 wow fadeInUp"
+                    data-wow-delay="0.1s"
+                >
+                    <h4 class="section-title">Wohnimmobilien</h4>
+                    <h1 class="display-5 mb-4">
+                        Wohnungen, Häuser und Reihenhäuser
+                    </h1>
+                    <p>
+                        Auf dieser Seite präsentieren wir Ihnen unsere
+                        sorgfältig ausgewählten Wohnimmobilien, die in der
+                        malerischen Schweiz zum Verkauf oder zur Miete angeboten
+                        werden. Unser Portfolio umfasst eine Vielzahl von
+                        Optionen, darunter moderne Wohnungen, charmante
+                        Einfamilienhäuser und stilvolle Reihenhäuser, die für
+                        verschiedene Lebensstile und Budgets geeignet sind.
+                        Lassen Sie sich von den einzigartigen Eigenschaften und
+                        der hervorragenden Lage dieser Immobilien inspirieren
+                        und finden Sie Ihr neues Zuhause.
+                    </p>
+                </div>
+                <div class="row g-0 team-items">
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="events position-relative">
+                            <div class="position-relative">
+                                <img
+                                    style="
+                                        height: 500px;
+                                        width: 100%;
+                                        object-fit: cover;
+                                    "
+                                    class="img-fluid"
+                                    src="img/event-1.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="bg-light text-center p-4">
+                                <h3 class="mt-2">Moderne Wohnung in Zürich</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <div class="events position-relative">
+                            <div class="position-relative">
+                                <img
+                                    style="
+                                        height: 500px;
+                                        width: 100%;
+                                        object-fit: cover;
+                                    "
+                                    class="img-fluid"
+                                    src="img/event-2.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="bg-light text-center p-4">
+                                <h3 class="mt-2">
+                                    Charmantes Einfamilienhaus in Luzern
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div class="events position-relative">
+                            <div class="position-relative">
+                                <img
+                                    style="
+                                        height: 500px;
+                                        width: 100%;
+                                        object-fit: cover;
+                                    "
+                                    class="img-fluid"
+                                    src="img/event-3.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="bg-light text-center p-4">
+                                <h3 class="mt-2">
+                                    Stilvolles Reihenhaus in Basel
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.7s"
+                    >
+                        <div class="events position-relative">
+                            <div class="position-relative">
+                                <img
+                                    style="
+                                        height: 500px;
+                                        width: 100%;
+                                        object-fit: cover;
+                                    "
+                                    class="img-fluid"
+                                    src="img/event-4.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="bg-light text-center p-4">
+                                <h3 class="mt-2">
+                                    Luxuriöse Penthouse-Wohnung in Genf
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="events position-relative">
+                            <div class="position-relative">
+                                <img
+                                    style="
+                                        height: 500px;
+                                        width: 100%;
+                                        object-fit: cover;
+                                    "
+                                    class="img-fluid"
+                                    src="img/event-5.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="bg-light text-center p-4">
+                                <h3 class="mt-2">Gemütliche Wohnung in Bern</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <div class="events position-relative">
+                            <div class="position-relative">
+                                <img
+                                    style="
+                                        height: 500px;
+                                        width: 100%;
+                                        object-fit: cover;
+                                    "
+                                    class="img-fluid"
+                                    src="img/event-6.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="bg-light text-center p-4">
+                                <h3 class="mt-2">
+                                    Neubauprojekt in St. Gallen
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+        <!-- Project Start -->
+        <div class="container-xxl project py-5">
+            <div class="container">
+                <div
+                    class="text-center mx-auto mb-5 wow fadeInUp"
+                    data-wow-delay="0.1s"
+                    style="max-width: 600px"
+                >
+                    <h4 class="section-title">Gewerbeimmobilien</h4>
+                    <h1 class="display-5 mb-4">
+                        Büros, Geschäfte und Lagerhallen
+                    </h1>
+                    <p>
+                        Entdecken Sie unser umfangreiches Portfolio an
+                        Gewerbeimmobilien in der Schweiz, das eine Vielzahl von
+                        Optionen für Unternehmen und Investoren bietet. Ob Sie
+                        ein modernes Büro, einen attraktiven Verkaufsraum oder
+                        eine praktische Lagerhalle suchen, wir bieten Ihnen
+                        maßgeschneiderte Lösungen, die auf Ihre geschäftlichen
+                        Anforderungen abgestimmt sind. Lassen Sie sich von den
+                        Möglichkeiten inspirieren, die unsere Gewerbeimmobilien
+                        bieten, und finden Sie den idealen Standort für Ihr
+                        Unternehmen.
+                    </p>
+                </div>
+                <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-lg-4">
+                        <div
+                            class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4"
+                        >
+                            <button
+                                class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active"
+                                data-bs-toggle="pill"
+                                data-bs-target="#tab-pane-1"
+                                type="button"
+                            >
+                                <h3 class="m-0">01. Inspiration</h3>
+                            </button>
+                            <button
+                                class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
+                                data-bs-toggle="pill"
+                                data-bs-target="#tab-pane-2"
+                                type="button"
+                            >
+                                <h3 class="m-0">02. Präsenz</h3>
+                            </button>
+                            <button
+                                class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
+                                data-bs-toggle="pill"
+                                data-bs-target="#tab-pane-3"
+                                type="button"
+                            >
+                                <h3 class="m-0">03. Kapazität</h3>
+                            </button>
+                            <button
+                                class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0"
+                                data-bs-toggle="pill"
+                                data-bs-target="#tab-pane-4"
+                                type="button"
+                            >
+                                <h3 class="m-0">04. Zusammenarbeit</h3>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="tab-content w-100">
+                            <div
+                                class="tab-pane fade show active"
+                                id="tab-pane-1"
+                            >
+                                <div class="row g-4">
+                                    <div
+                                        class="col-md-6"
+                                        style="min-height: 350px"
+                                    >
+                                        <div class="position-relative h-100">
+                                            <img
+                                                class="position-absolute img-fluid w-100 h-100"
+                                                src="img/project-1.jpg"
+                                                style="object-fit: cover"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h1 class="mb-3">
+                                            Modernes Büro in Zürich
+                                        </h1>
+                                        <p class="mb-4">
+                                            Dieses moderne Büro im Herzen von
+                                            Zürich bietet flexible
+                                            Arbeitsbereiche mit einer
+                                            beeindruckenden Aussicht auf die
+                                            Stadt. Die lichtdurchfluteten Räume
+                                            sind mit neuester Technik
+                                            ausgestattet und bieten eine
+                                            inspirierende Umgebung für kreative
+                                            und innovative Unternehmen. Mit
+                                            einem offenen Grundriss,
+                                            Besprechungsräumen und einer
+                                            großzügigen Lounge ist dieser
+                                            Arbeitsplatz perfekt für Start-ups
+                                            und etablierte Firmen, die Wert auf
+                                            eine ansprechende Arbeitsatmosphäre
+                                            legen. Die zentrale Lage ermöglicht
+                                            es Ihren Mitarbeitern, bequem zu
+                                            pendeln und die Vorzüge der Stadt zu
+                                            genießen.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab-pane-2">
+                                <div class="row g-4">
+                                    <div
+                                        class="col-md-6"
+                                        style="min-height: 350px"
+                                    >
+                                        <div class="position-relative h-100">
+                                            <img
+                                                class="position-absolute img-fluid w-100 h-100"
+                                                src="img/project-2.jpg"
+                                                style="object-fit: cover"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h1 class="mb-3">
+                                            Attraktives Geschäftslokal in Genf
+                                        </h1>
+                                        <p class="mb-4">
+                                            In einer belebten Einkaufsstraße in
+                                            Genf gelegen, ist dieses
+                                            Geschäftslokal ideal für
+                                            Einzelhändler oder
+                                            Gastronomiebetriebe, die eine hohe
+                                            Fußgängerfrequenz anziehen möchten.
+                                            Mit einer großzügigen Verkaufsfläche
+                                            und großen Schaufenstern, die viel
+                                            Tageslicht hereinlassen, können Sie
+                                            Ihre Produkte optimal präsentieren
+                                            und eine einladende Atmosphäre
+                                            schaffen. Die attraktive Lage sorgt
+                                            dafür, dass Ihre Kunden Sie leicht
+                                            finden, während die moderne
+                                            Ausstattung und das offene Design
+                                            Ihres Geschäfts eine angenehme
+                                            Einkaufserfahrung fördern. Nutzen
+                                            Sie die Gelegenheit, sich in einer
+                                            der dynamischsten Städte der Schweiz
+                                            zu etablieren.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab-pane-3">
+                                <div class="row g-4">
+                                    <div
+                                        class="col-md-6"
+                                        style="min-height: 350px"
+                                    >
+                                        <div class="position-relative h-100">
+                                            <img
+                                                class="position-absolute img-fluid w-100 h-100"
+                                                src="img/project-3.jpg"
+                                                style="object-fit: cover"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h1 class="mb-3">
+                                            Lagerhalle in Basel
+                                        </h1>
+                                        <p class="mb-4">
+                                            Diese geräumige Lagerhalle in Basel
+                                            bietet Ihnen ausreichend Platz für
+                                            Lagerung und Logistik. Mit einem
+                                            hohen Deckenbereich, direktem Zugang
+                                            zu Verkehrsanbindungen und einem
+                                            flexiblen Grundriss ist sie ideal
+                                            für Unternehmen, die viel Lagerraum
+                                            benötigen. Die großzügige Fläche
+                                            ermöglicht die effiziente
+                                            Organisation Ihrer Waren und die
+                                            Optimierung Ihrer Logistikprozesse.
+                                            Die strategische Lage in der Nähe
+                                            von wichtigen Verkehrsachsen sorgt
+                                            dafür, dass Ihre Waren schnell und
+                                            unkompliziert transportiert werden
+                                            können. Diese Lagerhalle bietet
+                                            Ihnen die Kapazität und
+                                            Flexibilität, die Sie für den Erfolg
+                                            Ihres Unternehmens benötigen.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab-pane-4">
+                                <div class="row g-4">
+                                    <div
+                                        class="col-md-6"
+                                        style="min-height: 350px"
+                                    >
+                                        <div class="position-relative h-100">
+                                            <img
+                                                class="position-absolute img-fluid w-100 h-100"
+                                                src="img/project-4.jpg"
+                                                style="object-fit: cover"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h1 class="mb-3">
+                                            Coworking Space in Lausanne
+                                        </h1>
+                                        <p class="mb-4">
+                                            Dieser moderne Coworking Space in
+                                            Lausanne fördert Kreativität und
+                                            Zusammenarbeit zwischen
+                                            verschiedenen Unternehmen und
+                                            Freiberuflern. Die flexibel
+                                            gestalteten Arbeitsplätze sind mit
+                                            allem ausgestattet, was moderne
+                                            Unternehmer benötigen, von
+                                            High-Speed-Internet bis hin zu
+                                            Konferenzräumen. Hier können Sie
+                                            sich mit Gleichgesinnten vernetzen,
+                                            Ideen austauschen und an gemeinsamen
+                                            Projekten arbeiten. Die
+                                            inspirierende Umgebung und die
+                                            zahlreichen Networking-Möglichkeiten
+                                            bieten Ihnen die ideale Grundlage,
+                                            um Ihr Geschäft weiterzuentwickeln.
+                                            Genießen Sie die Vorteile eines
+                                            kreativen und dynamischen
+                                            Arbeitsumfelds in einer der
+                                            lebhaftesten Städte der Schweiz.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project End -->
+
+        <!-- Facts Start -->
+        <div class="container-xxl py-5">
+            <div class="container pt-5">
+                <div
+                    class="text-center mx-auto mb-5 wow fadeInUp"
+                    data-wow-delay="0.1s"
+                >
+                    <h4 class="section-title">Exklusive Immobilien</h4>
+                    <h1 class="display-5 mb-4">
+                        Villen, Penthäuser und Herrenhäuser
+                    </h1>
+                    <p>
+                        Hauptbeschreibung: Entdecken Sie unsere erlesene Auswahl
+                        an Luxusimmobilien in der Schweiz und darüber hinaus.
+                        Von beeindruckenden Villen und stilvollen Penthäusern
+                        bis hin zu majestätischen Herrenhäusern bieten wir Ihnen
+                        Zugang zu den exklusivsten Objekten auf dem Markt.
+                        Darüber hinaus präsentieren wir Ihnen neue Bauprojekte,
+                        die die neuesten Trends in der Immobilienentwicklung
+                        widerspiegeln. Lassen Sie sich von den internationalen
+                        Möglichkeiten inspirieren, die der Immobilienmarkt in
+                        anderen Ländern bietet, und finden Sie Ihre
+                        Traumimmobilie, die Ihre höchsten Ansprüche erfüllt.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div
+                        class="col-lg-6 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="fact-item text-center bg-light h-100 p-5">
+                            <img
+                                src="img/estate-1.jpg"
+                                alt=""
+                                style="
+                                    width: 100%;
+                                    height: 400px;
+                                    object-fit: cover;
+                                "
+                            />
+                            <h3 class="mb-3">Luxuriöse Villa in Zermatt</h3>
+                            <p class="mb-0">
+                                Diese beeindruckende Villa in Zermatt ist das
+                                Nonplusultra des alpinen Lebensstils. Umgeben
+                                von majestätischen Bergen und in der Nähe des
+                                berühmten Matterhorns gelegen, bietet diese
+                                Immobilie nicht nur einen atemberaubenden Blick,
+                                sondern auch erstklassige Annehmlichkeiten, die
+                                keine Wünsche offenlassen. Die Villa erstreckt
+                                sich über mehrere Etagen und bietet großzügige
+                                Wohnräume, eine moderne Küche, mehrere
+                                Schlafzimmer mit ensuite Badezimmern sowie einen
+                                luxuriösen Wellnessbereich mit Sauna und
+                                Schwimmbad. Die geschmackvolle Inneneinrichtung
+                                verbindet traditionellen Charme mit modernem
+                                Design und schafft eine harmonische Atmosphäre,
+                                die zum Entspannen und Verweilen einlädt.
+                                Genießen Sie die Privatsphäre und den Luxus
+                                dieser einzigartigen Immobilie, die für
+                                anspruchsvolle Käufer gedacht ist, die das
+                                Besondere suchen. Zermatt, bekannt für seine
+                                Wintersportmöglichkeiten und das charmante
+                                Dorfleben, macht diese Villa zu einer idealen
+                                Investition für Ihr Freizeitvergnügen oder als
+                                permanenter Wohnsitz.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-6 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <div class="fact-item text-center bg-light h-100 p-5">
+                            <img
+                                src="img/estate-2.jpg"
+                                alt=""
+                                style="
+                                    width: 100%;
+                                    height: 400px;
+                                    object-fit: cover;
+                                "
+                            />
+                            <h3 class="mb-3">Elegantes Penthouse in Zürich</h3>
+                            <p class="mb-0">
+                                Dieses elegante Penthouse in Zürich bietet einen
+                                unvergleichlichen Lebensstil in einer der
+                                dynamischsten Städte Europas. Mit einer
+                                großzügigen Wohnfläche von über 250
+                                Quadratmetern erstreckt sich das Penthouse über
+                                die gesamte oberste Etage eines modernen
+                                Hochhauses und bietet einen spektakulären Blick
+                                auf die Stadt und den Zürichsee. Die
+                                lichtdurchfluteten Räume sind mit hochwertigen
+                                Materialien ausgestattet und verfügen über einen
+                                offenen Wohn- und Essbereich, der ideal für
+                                gesellige Abende ist. Die moderne Küche ist mit
+                                neuesten Geräten ausgestattet und lädt zum
+                                Kochen und Unterhalten ein. Zusätzlich bietet
+                                das Penthouse mehrere Schlafzimmer mit ensuite
+                                Badezimmern sowie einen privaten Zugang zu einer
+                                großzügigen Dachterrasse, die perfekt für
+                                Sommerabende und entspannende Stunden im Freien
+                                ist. Diese Immobilie vereint luxuriöses Wohnen
+                                mit urbanem Lebensstil und ist ideal für
+                                diejenigen, die das Beste aus beiden Welten
+                                genießen möchten. Die zentrale Lage ermöglicht
+                                es Ihnen, die kulturellen und gastronomischen
+                                Highlights von Zürich bequem zu erreichen,
+                                während Sie gleichzeitig in Ihrem persönlichen
+                                Rückzugsort entspannen können.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Facts End -->
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-light mb-4">ImmoExpert</h3>
+                        <p>
+                            Unsere Dienstleistungen im Bereich
+                            Immobilienmanagement bieten Ihnen professionelle
+                            Unterstützung bei der Verwaltung, Pflege und
+                            Optimierung Ihrer Immobilien. Wir stehen Ihnen mit
+                            unserer Erfahrung und unserem Fachwissen zur Seite,
+                            um sicherzustellen, dass Ihre Immobilienprojekte in
+                            der Schweiz erfolgreich sind.
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-light mb-4">Adresse</h3>
+                        <p class="mb-2">
+                            <i class="fa fa-phone-alt text-primary me-3"></i
+                            >+41443655151
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-envelope text-primary me-3"></i
+                            >immo_expert@gmail.com
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-envelope text-primary me-3"></i
+                            >Stampfenbachstrasse 85, 8006 Zürich, Switzerland
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-light mb-4">Schnelle Links</h3>
+                        <a class="btn btn-link" href="about.html">Über mich</a>
+                        <a class="btn btn-link" href="contact.html">Kontakt</a>
+                        <a class="btn btn-link" href="privacy-policy.html"
+                            >Datenschutzerklärung</a
+                        >
+                        <a class="btn btn-link" href="terms-of-use.html"
+                            >Nutzungsbedingungen</a
+                        >
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-light mb-4">Newsletter</h3>
+                        <p>
+                            Melden Sie sich für unseren Newsletter an und
+                            erhalten Sie regelmäßig exklusive Einblicke in den
+                            Immobilienmarkt, wertvolle Tipps zur
+                            Immobilienverwaltung und aktuelle Informationen über
+                            neue Objekte in der Schweiz.
+                        </p>
+                        <div
+                            class="position-relative mx-auto"
+                            style="max-width: 400px"
+                        >
+                            <input
+                                class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+                                type="text"
+                                placeholder="Deine E-Mail"
+                                id="info"
+                            />
+                            <button
+                                type="button"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+                                id="submit"
+                                onclick="sendRequest()"
+                            >
+                                Anmeldung
+                            </button>
+                            <div id="validation" style="color: red"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+            ><i class="bi bi-arrow-up"></i
+        ></a>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper">
+            <div class="sub-wrapper">
+                <div>
+                    <i class="bx bx-cookie"></i>
+                    <h2 style="text-align: center">Cookie-Zustimmung</h2>
+                </div>
+
+                <div class="data">
+                    <p id="cookie-text">
+                        Diese Website verwendet Cookies, um Ihnen ein besseres
+                        und besseres und relevanteres Surferlebnis auf der
+                        Website zu ermöglichen.
+                        <a href="#">Mehr erfahren...</a>
+                    </p>
+                </div>
+
+                <div class="buttons">
+                    <button class="cookie-button" id="acceptBtn">
+                        Akzeptieren
+                    </button>
+                    <button class="cookie-button" id="declineBtn">
+                        Rückgang
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/contact-form.js"></script>
+        <script src="js/cookiebanner.js"></script>
+    </body>
+</html>
