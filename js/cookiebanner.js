@@ -1,14 +1,7 @@
 const cookieBox = document.querySelector('.cookie-wrapper'),
     buttons = document.querySelectorAll('.cookie-button');
 
-cookieBox.classList.add('hidden');
-
-if (!localStorage.getItem('hideCookies', true)) {
-    setTimeout(function () {
-        cookieBox.classList.remove('hidden');
-        cookieBox.classList.add('show');
-    }, 5000);
-}
+cookieBox.classList.add('show');
 
 if (localStorage.getItem('hideCookies', true)) {
     cookieBox.classList.add('hidden');
